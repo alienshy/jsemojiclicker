@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emojidionunadi</title>
+    <link rel="stylesheet" href="./styleemoji.css">
+</head>
+<body>
+    <div class="vci" id="vci" style="background-color: black;">
+        <p class="your">Your Feedback &#x1F440; <span id="selectedEmoji"></span></p>
+        <div class="div2">
+            <p class="wt" id="wo1" onclick="selectEmoji(1)">😒</p>
+            <p class="wt" id="wo2" onclick="selectEmoji(2)">😐</p>
+            <p class="wt" id="wo3" onclick="selectEmoji(3)">😊</p>
+        </div>
+        <div class="kil" id="feedbackContainer">
+            <h2 id="unhappy">Unhappy</h2>
+            <h2 id="neutral">Neutral</h2>
+            <h2 id="satisfied">Satisfied</h2>
+        </div>
+        <button id="send" onclick="sendFeedback()">Send Feedback</button>
+    </div>
+
+    <script src="./emoji.js"></script>
+</body>
+</html>
